@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#app {
+    width: 90%;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 2em;
+}
+
+header {
+    background: #007bff;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header button {
+    background: white;
+    color: #007bff;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    margin-top: 1em;
+}
+
+main {
+    padding: 1em;
+}
+
+#number-selection, #ticket-options, #ticket-summary, #admin-interface {
+    margin-bottom: 2em;
+}
+
+#numbers {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+}
+
+#numbers .number {
+    width: 40px; /* Adjust as needed */
+    height: 40px; /* Adjust as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 1.2em;
+    font-weight: bold; /* Make the numbers bold */
+}
+
+.number.red { background: red; }
+.number.yellow { background: yellow; color: black; }
+.number.green { background: green; }
+.number.blue { background: blue; }
+
+button {
+    padding: 0.75em 1.5em;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+
+
+

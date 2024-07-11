@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3 - Lotto Simulator (Part One)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>Lotto Simulator</h1>
+            <button id="toggle-mode">Switch to Admin</button>
+        </header>
+        <main id="main-content">
+            <!-- User Interface -->
+            <div id="user-interface">
+                <h2>User Mode</h2>
+                <div id="number-selection">
+                    <h3>Select Your Numbers</h3>
+                    <div id="numbers"></div>
+                    <button id="submit-numbers">Submit Numbers</button>
+                </div>
+                <div id="ticket-options">
+                    <h3>Ticket Options</h3>
+                    <label for="boards">Number of Boards:</label>
+                    <input type="number" id="boards" min="1" max="10" value="1">
+                    <label>
+                        <input type="checkbox" id="lotto-plus-1"> Enter Lotto Plus 1
+                    </label>
+                    <label>
+                        <input type="checkbox" id="lotto-plus-2"> Enter Lotto Plus 2
+                    </label>
+                    <button id="generate-tickets">Generate Tickets</button>
+                </div>
+                <div id="ticket-summary">
+                    <h3>Ticket Summary</h3>
+                    <p id="ticket-cost">Total Cost: R0.00</p>
+                </div>
+            </div>
+
+            <!-- Admin Interface -->
+            <div id="admin-interface" style="display: none;">
+                <h2>Admin Mode</h2>
+                <button id="simulate-draw">Simulate Draw</button>
+                <div id="draw-results">
+                    <h3>Draw Results</h3>
+                    <p id="winning-numbers">Winning Numbers: </p>
+                    <p id="winning-tickets">Winning Tickets: </p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
